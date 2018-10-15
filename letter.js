@@ -5,8 +5,8 @@ const Letter = function (letter) {
 }
 //  return character string if already guessed, or placeholder symbol
 Letter.prototype.toString = function () {
-    if (isGuessed = true) {
-        return this.char
+    if (this.isGuessed === true) {
+        return ` ${this.char} `
     }
     else {
         return ' _ '
