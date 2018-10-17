@@ -16,7 +16,7 @@ function newWord() {
         // Randomly selects words
         randNum = Math.floor(Math.random() * gameWords.length)
         playWord = new Word(gameWords[randNum])
-        chances = Math.floor(playWord.toString().length / 2 + 5)
+        chances = Math.floor(playWord.toString().length / 3 + 6)
         console.log('New Word: \n')
         getGuess()
     }
