@@ -11,7 +11,6 @@ const Word = function (fullword) {
     }
     //  An array of new Letter objects representing the word
     this.arr = this.addLetters()
-    console.log(this.arr.join(''))
 }
 
 //  function that returns a string representation the word
@@ -24,8 +23,5 @@ Word.prototype.checkGuess = function (guess) {
     this.arr.forEach(item => item.checkGuess(guess))
 }
 
-let newword = new Word('pizza')
-newword.checkGuess('z')
-console.log(newword)
 
 module.exports = Word
