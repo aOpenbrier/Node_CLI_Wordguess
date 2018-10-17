@@ -3,6 +3,18 @@
 ## Description
 Word guessing game that runs from with node at the Command Line Interface.
 
+#### Play
+
+##### Winning
+The number of letters in the word to guess are displayed as underscores. Type a letter and press enter to guess. If the letter was correct it will be displayed instead of the underscore. Guess all letters to win.
+![Win round](./images/screenwin.jpg)
+##### Chances 
+Number of chances are based off word length. Lose the round if you run out of guesses before finished the word. Next word will start automatically.
+![Win round](./images/screenlose.jpg)
+##### Game Completed
+When you have completed all words game will end. Your total wins will be displayed.
+![Win round](./images/screengameover.jpg)
+
 ## Project
 This is is a class Assignmnent for UCI coding bootcamp. Assignment focuses on the use of constructors in Javascript.
 
@@ -26,3 +38,8 @@ This is is a class Assignmnent for UCI coding bootcamp. Assignment focuses on th
 - Game functionality:
   - Randomly selects words
   - Uses `inquirer` or `prompt` npm package
+
+#### Future Development:
+- [ ] Input validation: only accept single alpha character
+- [ ] Display previously guessed characters
+- [ ] Disable repeat guesses
